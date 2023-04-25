@@ -16,6 +16,18 @@
   </head>
   <body>
     <header>
+        <div id="modal__container" class="modal__container">
+            <div class="modal__header">
+              <div></div>
+              <i id="btn__close" class="fa fa-times modal__icon" aria-hidden="true"></i>
+            </div>
+            <div class="modal__content">
+              <a href="index.html"  id="modal__titles1"> Home</a>
+              <a href="about.html"  id="modal__titles2"> About</a>
+              <a href="#contact" id="modal__titles3"> Speakers</a>
+            </div>
+        </div>
+        <i id="btn__open" class="fa fa-bars" aria-hidden="true"></i>
       <nav class="socail_nav hide">
         <div class="socail_nav_div">
           <a href="#"
@@ -34,12 +46,12 @@
           /></a>
         </div>
         <ul class="nav_menu_list">
-          <li class="nav_menu_item"><a href="">About</a></li>
-          <li class="nav_menu_item"><a href="">Program</a></li>
-          <li class="nav_menu_item"><a href="">Join</a></li>
-          <li class="nav_menu_item"><a href="">Sponsor</a></li>
-          <li class="nav_menu_item"><a href="">News</a></li>
-          <li class="nav_menu_item"><a href="">Tickets</a></li>
+          <li class="nav_menu_item"><a id="about" href="#">About</a></li>
+          <li class="nav_menu_item"><a href="#">Program</a></li>
+          <li class="nav_menu_item"><a href="#">Join</a></li>
+          <li class="nav_menu_item"><a href="#">Sponsor</a></li>
+          <li class="nav_menu_item"><a href="#">News</a></li>
+          <li class="nav_menu_item"><a id="ticket" href="#">Tickets</a></li>
         </ul>
       </nav>
     </header>
@@ -151,5 +163,7 @@
         </div>
     </section>
     
+
+    <script src="./script/mobile_modal.js"></script>
   </body>
 </html>
