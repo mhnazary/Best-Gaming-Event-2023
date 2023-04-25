@@ -39,7 +39,10 @@ body {
   header {
     width: 100%;
     background-color: #fff;
-    height: 7rem;
+    height: 4rem;
+    position: sticky;
+    box-shadow: 4px 4px 4px #272a31;
+    display: block;
   }
   .socail_nav{
     background-color: #272a31;
@@ -68,7 +71,6 @@ body {
   }
 
   .logo {
-    /* border:2px solid #272a31; */
     height: 100%;
     width: 8vw;
     display: flex;
@@ -171,15 +173,13 @@ body {
   }
 
   .main_list_card {
-    width: 100%;
-    height: auto;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .5rem;
     background: #ffffff0f;
     margin-bottom: 1rem;
-    padding: .6rem;
   }
 
   .main_list_img {
@@ -211,8 +211,28 @@ body {
   }
 
 
-
+  .hide {
+    display: none;
+  }
  @media only screen and (min-width: 768px) {
+    
+    .socail_nav {
+        display: flex;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    header {
+        width: 100%;
+        background-color: #fff;
+        height: 7rem;
+        position: sticky;
+        box-shadow: 4px 4px 4px #272a31;
+        display: block;
+      }
+
     .intro {
         background-image: url(../images/homebg.jpg);
         background-size: cover;
@@ -274,20 +294,19 @@ body {
         font-size: 2.5rem;
       }
       .main_header_underline {
-        border-bottom: 2px solid #ec5242;
         width: 8vw;
       }
     
       .main_list{
         display: flex;
-        margin-top: 3.5rem;
+        justify-content: center;
+        margin-top: 3.5rem auto;
         width: 90%;
         
       }
     
       .main_list_card {
-        width: 15rem;
-        height: auto;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -296,17 +315,16 @@ body {
         background: #ffffff0f;
         text-align: center;
         padding: .5rem;
-        margin-right: 1rem;
-        height: 300px;
+        margin: .1rem;
       }
 
       .main_list_card:hover{
-        border: 3px solid #d3d3d3;
+        border: 2px solid #d3d3d3;
       }
 
       .main_list_header {
         color: #ec5242;
-        font-size: 2rem;
+        font-size: 1.3rem;
       }
 
       .main_list_bio {
@@ -323,6 +341,11 @@ body {
         padding: 2rem 0;
         font-size: 1.5rem;
         text-decoration: underline;
+      }
+
+      .feature_speaker {
+        height: 10rem ;
+        background-color: #fff;
       }
 
       .partner_container{
