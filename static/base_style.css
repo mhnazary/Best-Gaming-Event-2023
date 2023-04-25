@@ -28,6 +28,14 @@ body {
     display: flex;
   }
 
+  .grid {
+    display: grid;
+  }
+
+  .hide {
+    display: none;
+  }
+
   header {
     width: 100%;
     background-color: #fff;
@@ -348,5 +356,19 @@ body {
       .partner_list_item img {
         height: 80px;
         width: 100px;
+      }
+
+      .footer {
+        display: flex;
+        height: 8rem;
+        background-color: #fff;
+        color: #272a31;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .footer img {
+        height: 100px;
+        /* width: 300px; */
       }
   }
