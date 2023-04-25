@@ -151,7 +151,8 @@ body {
     font-style: normal;
   }
 
-  .intro {
+  .intro, 
+  .intro2 {
     background-image: url(../images/homebg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -165,6 +166,14 @@ body {
         font-size: 1.3rem;
         font-weight: 200;
   }
+  
+  .intro_subtitle2 {
+    color: #ec5242;
+    font-size: 1.3;
+    font-weight: 200;
+    text-align: center;
+    padding: 1rem 0;
+  }
 
   .intro_title {
     background: url(../images/titlebg.jpg) no-repeat center/cover;
@@ -176,12 +185,39 @@ body {
     padding-bottom: 1.5rem;
   }
 
+  .intro_title2 {
+    background: url(../images/titlebg.jpg) no-repeat center/cover;
+    font-size: 2.2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    line-height: 1;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+  }
+
   .intro_bio {
     border: solid 1px;
     padding: 1rem;
     background-color: #81757550;
   }
-  
+
+  .intro_bio2 {
+    border: solid 1px;
+    padding: 1rem;
+    background-color: #81757550;
+    text-align: justify;
+    margin-bottom: 3rem;
+  }
+
+  .intro_link {
+    margin: 1rem 0;
+    color: #ec5242;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+ 
   .event_time {
     padding: 1rem 0;
     font-weight: bolder;
@@ -211,6 +247,10 @@ body {
   }
   .main_header_underline {
     border-bottom: 2px solid #ec5242;
+    width: 8vw;
+  }
+  .main_header_underline2 {
+    border-bottom: 22px solid #ec5242;
     width: 8vw;
   }
 
@@ -260,6 +300,96 @@ body {
   .hide {
     display: none;
   }
+
+  /* about_logo section */
+  .about_logo, 
+  .past_event {
+    display: flex;
+    flex-direction: column;
+    color: #272a31;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about_logo_header,
+  .past_event_header {
+    color: #272a31;
+    width: 80vw;
+    padding: 1rem;
+  }
+
+  .about_logo_bio,
+  .past_event_bio {
+    color: #272a31;
+    width: 90vw;
+
+  }
+
+  .about_logo img {
+    width: 250px;
+    padding: 1rem;
+  }
+
+  .past_event img {
+    width: 80%;
+    margin: 1.5rem 0;
+  }
+
+  .partner_container2 {
+    width: 100%;
+    background-color: #272a31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    flex-direction: column;
+
+  }
+
+  .partner_header2 {
+    padding: 1.5rem 1rem 0;
+  }
+
+  .partner_header_underline2 {
+    border-top: 2px solid #ec5242;
+    width: 10vw;
+    padding: 1rem 0;
+  }
+
+  .partner_list2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .partner_list_item2 img {
+    width: 80px;
+  }
+
+  .footer2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    padding: 1.5rem;
+  }
+  .footer_img2 {
+    height:50px ;
+  }
+
+  .right_div {
+    width: 50vw;
+    line-height: 80%;
+  }
+
+  .rights2 {
+    color: #272a31;
+    font-size: .7rem;
+  }
  @media only screen and (min-width: 768px) {
     
     .socail_nav {
@@ -294,11 +424,38 @@ body {
         min-height: 80vh;
         padding: 8rem 8rem 5rem 8rem;
       }
-    
+
+      .intro_bio2 {
+        display: none;
+      }    
+       
+      .intro_bio3 {
+        border: 2px solid #d3d3d3;
+        padding: 1rem;
+        background-color: #81757550;
+        width: 70vw;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+  
+      .intro_link {
+        margin: 1rem 0;
+        color: #ec5242;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+      }
+
       .intro_subtitle {
             color: #ec5242;
             font-size: 3.3rem;
             font-weight: 200;
+      }
+
+      .intro_subtitle2 {
+        display: none;
       }
     
       .intro_title {
@@ -310,6 +467,18 @@ body {
         line-height: 1;
         padding-bottom: 1.5rem;
       }
+
+      .intro_title2 {
+        background: url(../images/titlebg.jpg) no-repeat center/cover;
+        font-size: 4rem;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 900;
+        line-height: 1;
+        padding: 1.5rem 0;
+        text-align: center;
+      }
+      
     
       .intro_bio {
         border: solid 1px;
@@ -419,6 +588,10 @@ body {
         flex-direction: column;
       }
 
+      .partner_container2 {
+        display: none;
+      }
+
       .partner_header {
         padding:1rem 0 .5rem 0 ;
         font-size: 2.5rem;
@@ -443,6 +616,47 @@ body {
         width: 100px;
       }
 
+      .about_logo, 
+      .past_event {
+        display: flex;
+        flex-direction: column;
+        color: #272a31;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .about_logo_header,
+      .past_event_header {
+        color: #272a31;
+        width: 80vw;
+        padding: 1rem;
+      }
+
+      .about_logo_bio,
+      .past_event_bio {
+        color: #272a31;
+        width: 70vw;
+
+      }
+
+      .about_logo img {
+        width: 250px;
+        padding: 1rem;
+      }
+
+      .past_event_images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .past_event img {
+        width: 80%;
+        margin: 1.5rem 1rem;
+      }
+
       .footer {
         display: flex;
         height: 8rem;
@@ -455,5 +669,28 @@ body {
       .footer img {
         height: 100px;
         /* width: 300px; */
+      }
+
+      .footer2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #272a31;
+        color: #d3d3d3;
+        padding: 1.5rem;
+      }
+      .footer_img2 {
+        height:80px ;
+        padding-left: 6rem;
+      }
+    
+      .right_div {
+        width: 50vw;
+        line-height: normal;
+      }
+    
+      .rights2 {
+        color: #d3d3d3;
+        font-size: 1rem;
       }
   }
