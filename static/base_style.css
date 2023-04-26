@@ -44,9 +44,10 @@ header {
 /* mobile menu modal */
 
 #btn__open {
-  padding: 1.5rem;
+  padding: 0.8rem 1rem;
   font-size: 1.5rem;
   color: #272a31;
+  z-index: 5000;
 }
 
 #btn__close {
@@ -62,8 +63,9 @@ header {
   opacity: 1;
   padding: 2rem;
   display: none;
-  animation: animateRight 1s;
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .modal__header {
@@ -100,13 +102,18 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 10rem;
+  padding-right: 7rem;
 }
 
 .socail_nav_div {
   width: 300px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+.socail_nav_div a {
+  padding-top: 8px;
 }
 
 .navbar {
@@ -116,16 +123,15 @@ header {
   color: #272a31;
   display: flex;
   justify-content: space-around;
-  border: 2px solid black;
+  align-items: center;
 }
 
 .logo {
   height: 100%;
-  width: 8vw;
+  width: 10vw;
   display: flex;
   align-items: center;
-
-  /* : black; */
+  margin-left: 3.5rem;
 }
 
 .logo img {
@@ -135,7 +141,7 @@ header {
 
 .nav_menu_list {
   display: flex;
-  width: 60vw;
+  width: 55vw;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -154,41 +160,44 @@ header {
 
 .intro,
 .intro2 {
-  background-image: url(../images/homebg.jpg);
+  background-image: url(../images/hero-bg-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 75vh;
+  min-height: 78vh;
   padding: 1rem 1rem 0.5rem 1rem;
 }
 
 .intro_subtitle {
   color: #ec5242;
   font-size: 1.3rem;
-  font-weight: 200;
+  font-weight: 400;
+  padding-top: 1.8rem;
 }
 
 .intro_subtitle2 {
   color: #ec5242;
   font-size: 1.3rem;
-  font-weight: 200;
+  font-weight: 400;
   text-align: center;
-  padding: 1rem 0;
+  font-style: normal;
+
+  /* padding: 0 0 0.5rem 0; */
 }
 
 .intro_title {
   background: url(../images/titlebg.jpg) no-repeat center/cover;
-  font-size: 2.5rem;
+  font-size: 2rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   line-height: 1;
-  padding-bottom: 1.5rem;
+  padding: 0.5rem 0 1.5rem 0;
 }
 
 .intro_title2 {
   background: url(../images/titlebg.jpg) no-repeat center/cover;
-  font-size: 2.2rem;
+  font-size: 2rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
@@ -198,23 +207,26 @@ header {
 }
 
 .intro_bio {
-  border: solid 1px;
+  border: 2px solid #fff;
   padding: 1rem;
-  background-color: #81757550;
+  background-color: #f2f2f2;
+  color: #272a31;
 }
 
 .intro_bio2 {
-  border: solid 1px;
+  box-shadow: 2px 2px 1px #d3d3d3;
   padding: 1rem;
-  background-color: #81757550;
+  background-color: #fff;
   text-align: justify;
   margin-bottom: 3rem;
+  color: #272a31;
 }
 
 .intro_contact_us {
   display: block;
   margin: 0 auto;
   text-align: center;
+  color: #272a31;
 }
 
 .intro_link {
@@ -229,11 +241,12 @@ header {
   padding: 1rem 0;
   font-weight: bolder;
   font-size: 1.7rem;
-  color: #e9e0e0;
+  color: #272a31;
 }
 
 .location {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  color: #272a31;
 }
 
 /* Start main section  */
@@ -266,6 +279,7 @@ header {
 
 .main_list_card {
   width: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,13 +291,13 @@ header {
 .main_list_img {
   height: 45px;
   width: 45px;
+  padding-left: 0.2rem;
 }
 
 .main_list_header {
   color: #ec5242;
   font-size: 0.8rem;
   width: 130px;
-  padding-inline: 5px;
 }
 
 .main_list_bio {
@@ -340,7 +354,9 @@ header {
 
 .about_logo img {
   width: 250px;
-  padding: 1rem;
+  padding: 0.7rem 2.6rem;
+  margin: 1.5rem;
+  border: 1px solid #272a31;
 }
 
 .past_event img {
@@ -452,7 +468,7 @@ header {
 }
 
 .job-position {
-  color: #ae2111b9;
+  color: #ec5242;
   font-style: italic;
 }
 
@@ -461,20 +477,25 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
+  .hide {
+    display: block;
+  }
+
+  header {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 7rem;
+    position: sticky;
+    box-shadow: 4px 4px 4px #272a31;
+  }
+
   .socail_nav {
     display: flex;
   }
 
   .navbar {
     display: flex;
-  }
-
-  header {
-    width: 100%;
-    background-color: #fff;
-    height: 7rem;
-    position: sticky;
-    box-shadow: 4px 4px 4px #272a31;
   }
 
   .modal__container {
@@ -486,16 +507,16 @@ header {
   }
 
   .intro {
-    background-image: url(../images/homebg.jpg);
+    background-image: url(../images/hero-bg-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 80vh;
-    padding: 8rem 8rem 5rem 8rem;
+    padding: 6rem 7rem 5rem 8rem;
   }
 
   .intro2 {
-    background-image: url(../images/homebg.jpg);
+    background-image: url(../images/hero-bg-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -508,10 +529,11 @@ header {
   }
 
   .intro_bio3 {
-    border: 2px solid #d3d3d3;
+    border: 4px solid #fff;
     padding: 1rem;
-    background-color: #81757550;
-    width: 70vw;
+    background-color: #fff;
+    color: #272a31;
+    width: 65vw;
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -528,7 +550,7 @@ header {
   .intro_subtitle {
     color: #ec5242;
     font-size: 3.3rem;
-    font-weight: 200;
+    font-weight: 400;
   }
 
   .intro_subtitle2 {
@@ -546,39 +568,40 @@ header {
   }
 
   .intro_title2 {
-    background: url(../images/titlebg.jpg) no-repeat center/cover;
-    font-size: 4rem;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
     font-weight: 900;
     line-height: 1;
-    padding: 1.5rem 0;
+    padding: 3rem 3.5rem;
     text-align: center;
+    color: #ec5242;
   }
 
   .intro_bio {
-    border: solid 1px;
+    border: 2px solid #fff;
     padding: 1rem;
-    font-size: 1.5rem;
-    background-color: #81757550;
-    width: 55vw;
+    font-size: 1.2rem;
+    background-color: #d3d3d3;
+    width: 48vw;
+    color: #272a31;
   }
 
   .intro_contact_us {
     display: block;
     margin: 1rem auto;
     text-align: center;
+    color: #272a31;
   }
 
   .event_time {
     padding: 1rem 0;
     font-weight: bolder;
-    font-size: 3rem;
-    color: #e9e0e0;
+    font-size: 2.3rem;
+    color: #272a31;
   }
 
   .location {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    color: #272a31;
   }
 
   .main {
@@ -724,6 +747,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 2rem;
   }
 
   .about_logo_header,
@@ -735,24 +759,31 @@ header {
 
   .about_logo_header_underline {
     border-bottom: 2px solid #ec5242;
-    width: 8vw;
+    width: 5vw;
   }
 
   .about_logo_bio,
   .past_event_bio {
     color: #272a31;
     width: 70vw;
+    padding-bottom: 1rem;
   }
 
   .about_logo img {
     width: 250px;
-    padding: 1rem;
+    margin: 2rem;
+    padding: 1rem 4rem;
+    border: 1px solid gray;
   }
 
   .past_event_images {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .line {
+    color: #272a31;
   }
 
   .past_event img {
@@ -767,21 +798,25 @@ header {
     color: #272a31;
     justify-content: space-evenly;
     align-items: center;
+    padding: 5rem;
+  }
+
+  .footer_div {
+    width: 50vw;
   }
 
   .footer img {
     height: 100px;
-
-    /* width: 300px; */
   }
 
   .footer2 {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    height: 8rem;
     background-color: #272a31;
-    color: #d3d3d3;
-    padding: 1.5rem;
+    color: #272a31;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem;
   }
 
   .footer_img2 {
