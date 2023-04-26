@@ -210,12 +210,19 @@ body {
     margin-bottom: 3rem;
   }
 
+  .intro_contact_us{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   .intro_link {
     margin: 1rem 0;
     color: #ec5242;
     text-align: center;
     margin: 0 auto;
     display: block;
+    padding-bottom: 1rem;
   }
  
   .event_time {
@@ -249,17 +256,13 @@ body {
     border-bottom: 2px solid #ec5242;
     width: 8vw;
   }
-  .main_header_underline2 {
-    border-bottom: 22px solid #ec5242;
-    width: 8vw;
-  }
 
   .main_list{
     margin-top: 1.5rem;
   }
 
   .main_list_card {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,14 +320,19 @@ body {
   .past_event_header {
     color: #272a31;
     width: 80vw;
-    padding: 1rem;
+    padding: 1.5rem 0.5rem .3rem;
+  }
+
+  .about_logo_header_underline{
+    border-bottom: 2px solid #ec5242;
+    width: 15vw;
   }
 
   .about_logo_bio,
   .past_event_bio {
     color: #272a31;
     width: 90vw;
-
+    margin-top:1rem ;
   }
 
   .about_logo img {
@@ -478,6 +486,15 @@ body {
         padding: 8rem 8rem 5rem 8rem;
       }
 
+      .intro2 {
+        background-image: url(../images/homebg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 80vh;
+        padding: 3rem 0 5rem;
+      }
+
       .intro_bio2 {
         display: none;
       }    
@@ -539,6 +556,12 @@ body {
         font-size: 1.5rem;
         background-color: #81757550;
         width: 55vw;
+      }
+
+      .intro_contact_us{
+        display: block;
+        margin: 1rem auto;
+        text-align: center;
       }
       
       .event_time {
