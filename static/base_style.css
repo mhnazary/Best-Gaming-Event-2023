@@ -734,6 +734,11 @@ body {
         padding: 1rem;
       }
 
+      .about_logo_header_underline{
+        border-bottom: 2px solid #ec5242;
+        width: 8vw;
+      }
+
       .about_logo_bio,
       .past_event_bio {
         color: #272a31;
