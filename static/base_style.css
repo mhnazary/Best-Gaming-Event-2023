@@ -390,6 +390,59 @@ body {
     color: #272a31;
     font-size: .7rem;
   }
+
+  .team-page {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.2rem;
+  }
+  
+  .subtitle {
+    color: #272a31;
+    margin: 1rem 0 0.4rem;
+  }
+  
+  .team-card {
+    grid-template-columns: 1fr 1fr;
+    color: #272a31;
+    margin-bottom: 1.5rem;
+  }
+  
+  .chestbg {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    z-index: 1;
+  }
+  
+  .team-photo {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    z-index: 2;
+    margin: 1.1rem 0 0 1.1rem;
+  }
+  
+  .team-info {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  
+  .job-underline {
+    padding: 1px;
+    background: #272a31;
+    width: 1.8rem;
+  }
+  
+  .job-position {
+    color: #ae2111b9;
+    font-style: italic;
+  }
+  
+  .team-resume {
+    font-size: 0.7rem;
+  }
+  
  @media only screen and (min-width: 768px) {
     
     .socail_nav {
@@ -574,9 +627,19 @@ body {
         text-decoration: underline;
       }
 
-      .feature_speaker {
-        height: 10rem ;
-        background-color: #fff;
+      .team-page {
+        padding: 4vw 10%;
+      }
+    
+      .team-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw;
+        margin-top: 4rem;
+      }
+    
+      .team-card {
+        grid-template-columns: 1fr 2fr;
+        gap: 1vw;
       }
 
       .partner_container{
