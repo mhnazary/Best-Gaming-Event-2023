@@ -44,6 +44,8 @@ body {
     box-shadow: 4px 4px 4px #272a31;
   }
 
+  /* mobile menu modal */
+
   #btn__open {
     padding: 1.5rem;
     font-size: 1.5rem;
@@ -93,6 +95,8 @@ body {
   .modal__icon {
     font-size: 1.2rem;
   }
+
+  /* navbar */
 
   .socail_nav{
     background-color: #272a31;
@@ -150,6 +154,8 @@ body {
     color: #272a31;
     font-style: normal;
   }
+
+  /* Start intro section */
 
   .intro, 
   .intro2 {
@@ -236,6 +242,8 @@ body {
     font-size: 0.9rem;
   }
 
+  /* Start main section  */
+
   .main {
     display: flex;
     background-image: url(../images/infopg.jpg);
@@ -304,7 +312,8 @@ body {
     display: none;
   }
 
-  /* about_logo section */
+  /* about_logo section about_page*/
+
   .about_logo, 
   .past_event {
     display: flex;
@@ -345,6 +354,8 @@ body {
     margin: 1.5rem 0;
   }
 
+  /* partner section about_page */
+
   .partner_container2 {
     width: 100%;
     background-color: #272a31;
@@ -378,6 +389,8 @@ body {
     width: 80px;
   }
 
+  /* footer section about_page */
+
   .footer2 {
     display: flex;
     justify-content: space-evenly;
@@ -398,6 +411,8 @@ body {
     color: #272a31;
     font-size: .7rem;
   }
+
+  /* feature speaker section home_page */
 
   .team-page {
     flex-direction: column;
@@ -689,7 +704,6 @@ body {
       .partner_list {
         display: flex;
         justify-content: space-evenly;
-        border: 2px solid blue;
         margin: 3rem 0;
         width: 90%;
         padding: 2rem;
