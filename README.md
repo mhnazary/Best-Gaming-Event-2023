@@ -95,7 +95,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-This is the [live demo link](https://mhnazary.github.io/Best-Gaming-Event-2023/) In this [video](https://www.loom.com/share/10a38316db194e76a1c84048f8e41cde) I share a live view of my project while also talking about the creation.
+This is the [live demo link](https://mhnazary.github.io/Best-Gaming-Event-2023/) In this [video](https://www.loom.com/share/10a38316db194e76a1c84048f8e41c) I share a live view of my project while also talking about the creation.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
