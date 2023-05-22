@@ -20,7 +20,7 @@ REQUIRED SECTIONS:
 - License
 
 OPTIONAL SECTIONS:
-- FAQ
+- FAQ 
 
 After you're finished please remove all the comments and instructions!
 -->
