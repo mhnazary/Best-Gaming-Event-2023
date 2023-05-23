@@ -11,7 +11,7 @@ REQUIRED SECTIONS:
 - About the Project
   - Built With
   - Live Demo
-- Getting Started
+- Getting Started 
 - Authors
 - Future Features
 - Contributing
